@@ -1,0 +1,32 @@
+<!-- 
+  TODO : revenir à un système d'attributs @data, par exemple @data-content et @data-attribute pour une écriture plus propre
+  réécrire la fontion synopsx.mappings.htmlWrapping:simplePattern en fonction de ce changement
+ -->
+ 
+<div class="container">
+    <div class="row">
+		<hr/>
+		<hr/>
+         <div class="col-sm-5 col-md-5">
+		 {issueyear} / {issuevol} / {issuepartnumber}  / {issueparttitle} 
+         </div>
+        <div class="col-sm-7 col-md-7"> 
+                        <ul class="pager">
+                            <li class="previous"><a href="{precedent}">Numéro précédent</a></li> 
+                            <li class="next"><a href="{suivant}">Numéro suivant</a></li> 
+                        </ul>
+        </div>
+    </div>
+	<div class="row">
+		<div class="col-sm-5 col-md-5"> 
+			<li class="type">{image}</li>
+		</div>
+ 
+		<div class="col-sm-7 col-md-7"> 
+			<li class="type">{numero}, {title}</li>
+			{tei}
+		</div>
+
+	</div>
+
+</div>
